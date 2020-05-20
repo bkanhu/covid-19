@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    /* overflow-x: hidden; */
+    background-color: #23232e;
+    color: #fff;
+  }
+  nav{
+    text-align: center;
+    background-color:#3b3b4b ;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  div{
+    text-align: center;
+  }
+  .container {
+    padding-right: 5px;
+padding-left: 5px;
+    margin-top: 50px;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: #fff !important;
+  }
+
+  td,
+  th {
+  
+    border: 1px solid #8e8e8e;
+    text-align: left;
+    padding: 3px;
+    width: 100%;
+  }
+ 
+  tr {
+  }
+  tr:nth-child(even) {
+    background-color: #3b3b4b;
+  }
+
+  tr:hover {
+    background-color: #23232e !important;
+    color: #fff !important;
+    opacity: 0.5;
+  }
+  .row{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .stat_box{
+      margin: 0 5px;
+      padding: 5px;
+      background-color:#3b3b4b ;
+  }
+  .row.stat_box{
+      display: grid;
+  }
+  footer{
+    margin-top: 10px;
+    background-color: #3b3b4b;
+    text-align: center;
+    padding:5px;
+  }
+  a{
+      color: aqua;text-decoration: none;
+      padding: 5px;
+  }
+  a:hover{
+    color: darkorange;
+    background-color: rgb(20, 10, 10);
+    text-decoration: none;
+}
+  @media screen and (max-width: 599px) {
+    body{
+      overflow-x: hidden;
+    }
+    .row{
+      display: flex;
+      flex-direction: column;
+    }
+    .stat_box{
+      margin: 3px;
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 899px) {
+    .container {
+      width: 90%;
+      margin: 5px;
+      /* background-color:red; */
+    }
+    .row{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media screen and (min-width: 900px) and (max-width: 1199px) {
+    body{
+      overflow-x: hidden;
+    }
+    .container{
+        width: 60rem;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+   
+    body{
+      overflow-x: hidden;
+    }
+      .container{
+        width: 70%;
+    }
+  }
+  

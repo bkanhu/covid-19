@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>COVID19 | KanhuCharan.me</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <nav>
+          <h1>COVID-19-IN</h1>
+      </nav>
+    <div class="row stats" id="data">
+        
+        
+          <div class="stat_box confirmed">
+            <h3>Confirmed</h3>
+            <span class="number" id="confirmed">Waiting...</span>
+          </div>
+  
+          <div class="stat_box active">
+            <h3>Active</h3>
+            <span class="number" id="active">Waiting...</span>
+          </div>
+  
+          <div class="stat_box recovered">
+            <h3>Recovered</h3>
+            <span class="number" id="recovered">Waiting...</span>
+          </div>
+  
+          <div class="stat_box deceased">
+            <h3>Deceased</h3>
+            <span class=" number" id="deceased">Waiting...</span>
+          </div>
+
+
+      </div>
+      <div>
+<br>
+       <h4>
+         Last Updated -
+         <span class="last_updated">
+           
+        </span>
+      <!-- </h5> -->
+    </h4>
+      </div>
+    <div class="container" id="div1">
+      <table style="width: 100%;" id="mytable" class="table-hover">
+        <thead>
+          <tr>
+            <th>State</th>
+            <th>Total Confirmed</th>
+            <!-- <th>Active</th> -->
+            <!-- <th>confirmedCasesForeign</th> -->
+            <th>Discharged</th>
+            <th>Deaths</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+   <br> <footer>
+      Covid-19-IN by <a href="https://kanhucharan.me">Kanhu Charan</a>
+      <br>
+      <a href="https://github.com/bkanhu/covid-19">Check me out on GitHub</a>
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script src="jquery-3.5.1.js"></script> -->
+  </body>
+</html>
