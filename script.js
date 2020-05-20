@@ -1,7 +1,6 @@
 console.log("hello");
 
-const data =
-  "https://api.rootnet.in/covid19-in/stats/latest";
+const data = "https://api.rootnet.in/covid19-in/stats/latest";
 // const lastUpdated = document.querySelector(".last_updated");
 
 fetch(data)
@@ -14,14 +13,16 @@ fetch(data)
     document.querySelector(".last_updated").textContent = refreshedDate;
     const [
       confirmed,
+      _confirmedIndian,
+      _confirmedForeign,
       discharged,
       deaths,
     ] = obj;
     console.log("confirmed : " + confirmed);
     console.log("discharged : " + discharged);
     console.log("deaths : " + deaths);
-    console.log("total : " + (confirmed+discharged+deaths));
-    console.log("last updated : "+ refreshedDate);
+    console.log("total : " + (confirmed + discharged + deaths));
+    console.log("last updated : " + refreshedDate);
     if (regional.length > 0) {
       // var arrayOfObjects = Object.values(data.data.regional);
       // var temp = "";
@@ -45,7 +46,6 @@ fetch(data)
         $("#mytable").append(tr + td1 + td2 + td3 + td4);
       }
 
-
       document.querySelector(
         ".confirmed .number"
       ).textContent = confirmed.toLocaleString();
@@ -58,6 +58,5 @@ fetch(data)
       document.querySelector(
         ".deceased .number"
       ).textContent = deaths.toLocaleString();
-      
     }
   });
