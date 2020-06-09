@@ -2,7 +2,7 @@
 
 Live update covid19 stats of different states of India.
 
-For live demo visit: https://kanhucharan.me/covid-19/
+For live demo visit: https://covid-19.kanhucharan.me/
 
 ![Covid-19-IN image](covid-19-in.png)
 
