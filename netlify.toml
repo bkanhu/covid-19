@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://kanhu-covid-19.netlify.app/*"
+  to = "https://covid-19.kanhucharan.me/:splat"
+  status = 301
+  force = true
